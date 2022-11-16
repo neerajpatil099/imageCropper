@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="./node_modules/cropperjs/dist/cropper.min.css">
+    <!-- <link rel="stylesheet" href="css/main-style.css"> -->
+ 
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">
+        Add Image / Icon
+    </h1>
+    <div class="hero">
+        <h3>Upload image</h3>
+        <div class="image-container">
+            <div class="image-workspace">
+                <img id="image" src="" alt="">
+            </div>
+            <img src="" id="output" alt="">
+        </div>
+       
+        <div class="action-button df">
+            <button class="upload btn" >Choose from device</button>
+            <input type="file" class="hidden-upload" style="display: none;" accept="image/*">
+            <button id="crop" class="btn" ><svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M17 15V7Q17 7 17 7Q17 7 17 7H9V5H17Q17.825 5 18.413 5.588Q19 6.175 19 7V15ZM17 23V19H7Q6.175 19 5.588 18.413Q5 17.825 5 17V7H1V5H5V1H7V17Q7 17 7 17Q7 17 7 17H23V19H19V23Z"/></svg></button>
+        </div>
+        
+        <div class="frames">
+        <button class="fbtn" id="love"><img src="./asset/user_image_frame_1.png" alt=""></button>
+        <button class="fbtn" id="square"><img src="./asset/user_image_frame_2.png" alt=""></button>
+        <button class="fbtn" id="circle"><img src="./asset/user_image_frame_3.png" alt=""></button>
+        <button class="fbtn" id="rectangle"><img src="./asset/user_image_frame_4.png" alt=""></button>
+    </div>
+        <div class="ctrl-cropper">
+            <p></p>
+        </div>
+        <script src="./node_modules/cropperjs/dist/cropper.min.js"></script>
+        <script src="index.js" ></script>
+</body>
+</html>
